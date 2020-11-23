@@ -1,8 +1,9 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:3003/persons";
+//const baseUrl = "http://localhost:3003/persons";
+const baseUrl = 'api/persons';
 
-// get rquest for all of json data
+// get rquest for all of json datas
 const getAll = () => {
   const request = axios.get(baseUrl);
   return request.then(response => response.data);
@@ -11,7 +12,7 @@ const getAll = () => {
 // post request to add new entry
 const create = newObject => {
   const request = axios.post(baseUrl, newObject);
-  return request.then(response => response.data);
+  return request.then(response => response.data)
 };
 
 // put request to update json db

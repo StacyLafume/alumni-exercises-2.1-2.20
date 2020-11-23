@@ -92,7 +92,7 @@ const App = () => {
               showMessage(`User ${newName} has been added to the phone book`);
             })
             .catch(error => {
-              console.log(error.response.data.error);
+              console.log(error.response.data.error)
               return showMessage(
                 `Failed to add number. More about error: ${
                   error.response.data.error

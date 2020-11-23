@@ -1,8 +1,8 @@
 import React from "react";
 
 const Notification = ({ notification, success }) => {
-  console.log(notification);
-  console.log(success);
+  // console.log(notification);
+  // console.log(success);
 
   // if there is no notification return null
   if (notification === null) {
